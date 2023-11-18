@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mirai</title>
+    <link rel="icon" type="image/icon" href="/image/logo.jpeg">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -15,10 +16,10 @@
             </div>
 
             <ul class="links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Service</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#service">Our Service</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
     
             <a href="#" class="btn">Order</a>
@@ -28,22 +29,161 @@
         </div>
 
         <div class="dropdown">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Service</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#service">Our Service</a></li>
+            <li><a href="#contact">Contact</a></li>
             <li><a href="#" class="btn">Order</a></li>
         </div>
     </header>
 
     <main>
-        <div class="hero">
-            <h1>Mirai</h1>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br>
-                 Ipsum quos tenetur sunt est soluta dicta ullam corrupti repellat porro expedita? <br>
-                  Consequatur ea temporibus quasi ipsum odio ad dolores aut reprehenderit.</p>
+        <div class="hero" id="home">
+            <article>
+                <h1>Mirai</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br>
+                    Ipsum quos tenetur sunt est soluta dicta ullam corrupti repellat porro expedita? <br>
+                    Consequatur ea temporibus quasi ipsum odio ad dolores aut reprehenderit.
+                </p>
+            </article>
+        </div>
+        <div class="card-container" id="blog">
+            <h4>Daily Blog</h4>
+            <div class="cards">
+                <div class="card">
+                    <img src="image/img1.jpg" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, dicta iure eaque doloremque non nostrum.</p>
+                </div>
+                <div class="card">
+                    <img src="image/img2.jpg" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, dicta iure eaque doloremque non nostrum.</p>
+                </div>
+                <div class="card">
+                    <img src="image/img3.jpg" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, dicta iure eaque doloremque non nostrum.</p>
+                </div>
+                <div class="card">
+                    <img src="image/img1.jpg" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, dicta iure eaque doloremque non nostrum.</p>
+                </div>
+                <div class="card">
+                    <img src="image/img2.jpg" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, dicta iure eaque doloremque non nostrum.</p>
+                </div>
+                <div class="card">
+                    <img src="image/img3.jpg" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, dicta iure eaque doloremque non nostrum.</p>
+                </div>
+            </div>
+        </div>
+        <div class="service-container" id="service">
+            <h3>Our Service</h3>
+            <div class="cards-services">
+                <div class="service">
+                    <h4>Cake</h4>
+                    <i class="fa fa-cake"></i>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="service">
+                    <h4>Pastry</h4>
+                    <i class="fas fa-bread-slice"></i>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="service">
+                    <h4>Dessert</h4>
+                    <i class="fas fa-ice-cream"></i>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-image-galery">
+            <h2 class="heading-text">Baked <span>image gallery</span></h2>
+            <div class="image-gallery">
+                <div class="column">
+                    <div class="image-item">
+                        <img src="https://images.unsplash.com/photo-1506459225024-1428097a7e18?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGJha2VyeXxlbnwwfDF8MHx8fDA%3D" alt=""/>
+                        <div class="overlay"><span>Blueberry Cake</span></div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="image-item">
+                        <img src="https://images.unsplash.com/photo-1569864358642-9d1684040f43?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGJha2VyeXxlbnwwfDB8MHx8fDA%3D" alt="" />
+                        <div class="overlay"><span>Macaroons</span></div>
+                    </div>
+                    <div class="image-item">
+                        <img src="https://plus.unsplash.com/premium_photo-1687886026544-a07433c0ee2a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8YmFrZXJ5fGVufDB8MHwwfHx8MA%3D%3D" alt="" />
+                        <div class="overlay"><span>Cookies</span></div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="image-item">
+                        <img src="https://images.unsplash.com/photo-1613929231151-d7571591259e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGJha2VyeXxlbnwwfDF8MHx8fDA%3D" alt="" />
+                        <div class="overlay"><span>Croissant</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="about-us">
+            <h3>About US</h3>
+            <div class="container-us">
+                <img src="https://plus.unsplash.com/premium_photo-1682088968333-eeeea143a7c5?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTN8fGJha2VyeXxlbnwwfDB8MHx8fDA%3D" alt="">
+                <article class="description">
+                    <h3><span>Mirai</span></h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate aut accusamus repellat dolorum, numquam, deserunt natus corrupti, enim aperiam pariatur sed nulla!</p>
+                </article>
+            </div>
+        </div>
+
+        <div class="detail-contact" id="contact">
+            <div class="meet-us">
+                <div class="title">
+                    <h3>Meet Us</h3>
+                </div>
+                <ul>
+                    <li class="phone">
+                        <i class="fa fa-phone"></i>
+                        <p>+62895335587822</p>
+                    </li>
+                    <li class="mail">
+                        <i class="fa-solid fa-envelope"></i>
+                        <p>pepbritisnasetiawan@gmail.com</p>
+                    </li>
+                    <li class="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                        <p>@febrian_tisna</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="bio-container">
+                <aside>
+                    <div class="bio">
+                        <h3>Our Chef</h3>
+                        <p>Febrian Tisna</p>
+                    </div>
+                    <img src="/image/profile.jpg" alt="profile">
+                </aside>
+            </div>
         </div>
     </main>
+    <footer class="footer">
+        <ul class="social-media">
+            <li class="social-icon"><a class="social-icon-link" href="#">
+                <i class="fa-brands fa-instagram"></i>
+            </a></li>
+            <li class="social-icon"><a class="social-icon-link" href="#">
+                <i class="fab fa-whatsapp"></i>
+            </a></li>
+            <li class="social-icon"><a class="social-icon-link" href="#">
+                <i class="fab fa-twitter"></i>
+            </a></li>
+            <li class="social-icon"><a class="social-icon-link" href="#">
+                <i class="fab fa-tiktok"></i>
+            </a></li>
+        </ul>
+        <p>&copy;2023 Pepbri Tisna Setiawan | All Rights Reserved</p>
+    </footer>
 
     <script src="js/script.js"></script>
 </body>

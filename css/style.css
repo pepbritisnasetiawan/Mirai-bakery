@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;0,800;1,600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     font-family: "Poppins", sans-serif;
     box-sizing: border-box;
@@ -64,7 +69,7 @@ header {
 }
 
 .btn:hover {
-    color: rgba(244, 140, 5, 0.689);
+    color: rgba(41, 24, 3, 0.689);
     scale: 1.05;
 }
 
@@ -119,8 +124,293 @@ header {
 }
 
 .hero p {
-    color: #1d1d1c;
+    color: #422302;
     font-size: 1.2rem;
+}
+
+.card-container {
+    width: 100%;
+    background-color: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0px 90px;
+    overflow: hidden;
+}
+
+.card-container h4 {
+    font-family: 'Yellowtail', cursive;
+    padding: 4rem;
+    text-align: center;
+    font-weight: 500;
+    font-size: 3rem;
+    color: #422302;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex: 0 0 33.3333%;
+    flex-wrap: wrap;
+    margin: 20px 20px;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.card:hover {
+    box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.2);
+    transition: .3s;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+}
+
+.card p {
+    text-align: left;
+    margin: 1rem;
+}
+
+.service-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #f7f7f7;
+}
+
+.service-container h3 {
+    font-family: 'Yellowtail', cursive;
+    padding: 2rem;
+    text-align: center;
+    font-weight: 500;
+    font-size: 3rem;
+    color: #422302;
+}
+
+.cards-services {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.service {
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 2rem;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.service:hover {
+    box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.2);
+    transition: .3s;
+    scale: 1.05;
+}
+
+.service h4 {
+    font-family: 'Yellowtail', cursive;
+    color: #422302;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.service i {
+    font-size: 2rem;
+    color: rgb(250, 196, 129);
+    padding: 1rem;
+}
+
+.container-image-galery {
+    padding: 40px 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.heading-text {
+    padding: 2rem;
+    font-size: 2rem;
+    color: rgb(102, 65, 17);
+}
+
+.heading-text span {
+    font-weight: 100;
+    color: #422302;
+}
+
+.image-gallery {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+}
+
+.image-gallery .column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.image-item img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.image-item {
+    position: relative;
+    cursor: pointer;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(57, 57, 57, 0.502);
+    border-radius: 10px;
+    top: 0;
+    left: 0;
+    transform: scale(0);
+    transition: all 0.2s 0.1s ease-in-out;
+    color: #fff;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-item:hover .overlay {
+    transform: scale(1);
+}
+
+.about-us {
+    display: flex;
+    flex-direction: column;
+    background-color: #f7f7f7;
+}
+
+.about-us h3 {
+    text-align: center;
+    padding: 2rem;
+    font-size: 3rem;
+    font-family: 'Yellowtail', cursive;
+    color: #422302;
+}
+
+.container-us {
+    display: flex;
+    background-color: rgb(223, 196, 146);
+}
+
+.container-us article {
+    text-align: center;
+    margin: 4rem;
+    padding: 2rem;
+}
+
+.container-us article span {
+    font-family: 'Yellowtail', cursive;
+    color: #422302;
+    font-size: 3rem;
+}
+
+.detail-contact {
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem;
+}
+
+.meet-us .title h3 {
+    padding: 2rem;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.detail-contact ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.detail-contact li {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin: 1rem;
+}
+
+.detail-contact ul li i{
+    font-size: 1.5rem;
+    color: #422302;
+} 
+
+.bio-container aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+aside .bio h3 {
+    padding: 2rem;
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.bio p {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.bio-container aside img {
+    margin: 2rem 0 2rem 0;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.bio-container aside img:hover {
+    scale: 1.3;
+    transition: .8s;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    background-color: rgba(236, 213, 193, 0.142);
+}
+
+.footer .social-media {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px 0;
+}
+
+.social-icon-link {
+    font-size: 1.5rem;
+    color: #422302;
+    margin: 0 10px;
+    transition: .5s;
+}
+
+.social-icon-link:hover {
+    transform: translateY(-10px);
 }
 
 @media (max-width: 768px) {
@@ -141,6 +431,79 @@ header {
     .dropdown.show {
         height: 240px;
     }
+
+    .card-container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .card {
+        flex: 50%;
+    }
+
+    .service-container {
+        display: flex;
+    }
+
+    .cards-services {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container-image-galery {
+        display: flex;
+    }
+
+    .image-gallery {
+        display: flex;
+        flex-wrap: wrap;
+        width: 75%;
+    }
+
+    .about-us {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container-us {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-us h3 {
+        font-size: 2.5rem;
+    }
+
+    .container-us article span {
+        font-size: 2.5rem;
+    }
+
+    .detail-contact {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .meet-us {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 @media (max-width: 600px) {
@@ -148,4 +511,80 @@ header {
         left: 2rem;
         width: unset;
     }
+
+    .card-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-container {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .service-container h4 h3 {
+        font-size: 2.5rem;
+    }
+
+    .image-gallery {
+        display: flex;
+        flex-wrap: wrap;
+        width: 50%;
+    }
+
+    .about-us {
+        display: flex;
+    }
+
+    .container-us {
+        display: flex;
+        align-items: center;
+    }
+
+    .container-us img {
+        width: 100%;
+    }
+
+    .container-us article {
+        margin: 1rem;
+    }
+
+    .container-us p {
+        text-align: left;
+    }
+
+    .container-us article span {
+        font-size: 1.8rem;
+    }
+
+    .about-us h3 {
+        font-size: 2rem;
+    }
+
+    .meet-us ul li i {
+        font-size: 1rem;
+    }
+
+    .footer {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .footer p {
+        font-size: .8rem;
+        padding: 1rem;
+        text-align: center;
+    }
+    
 }

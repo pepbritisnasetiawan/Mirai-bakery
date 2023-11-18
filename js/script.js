@@ -17,3 +17,4 @@ document.querySelectorAll('li').forEach(n => n.addEventListener("click", () => {
 
     toggleIcon.classList = isOpen ? "fas fa-times" : "fas fa-bars";
 }))
+
