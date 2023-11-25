@@ -27,12 +27,14 @@ a {
     transition: 0.3s;
 }
 
-a:hover {
+a:hover,
+a.active {
     color: rgb(249, 207, 154);
 }
 
 header {
     position: sticky;
+    top: 0;
     padding: 0 2rem;
     background-color: rgba(240, 248, 255, 0.669);
 }
@@ -117,15 +119,17 @@ header {
 }
 
 .hero h1 {
-    font-size: 3rem;
+    font-size: 6rem;
     margin-bottom: 1rem;
+    font-weight: 500;
+    color: #180b00;
     font-family: 'Yellowtail', cursive;
-    color: rgb(102, 65, 17);
 }
 
 .hero p {
-    color: #422302;
-    font-size: 1.2rem;
+    /* color: #422302; */
+    color: rgb(19, 49, 49);
+    font-size: 1.5rem;
 }
 
 .card-container {
@@ -140,7 +144,7 @@ header {
     overflow: hidden;
 }
 
-.card-container h4 {
+.card-container h3 {
     font-family: 'Yellowtail', cursive;
     padding: 4rem;
     text-align: center;
@@ -260,6 +264,7 @@ header {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    justify-content: space-between;
 }
 
 .image-item img {
@@ -302,6 +307,7 @@ header {
 
 .about-us h3 {
     text-align: center;
+    font-weight: 500;
     padding: 2rem;
     font-size: 3rem;
     font-family: 'Yellowtail', cursive;
@@ -310,7 +316,12 @@ header {
 
 .container-us {
     display: flex;
-    background-color: rgb(223, 196, 146);
+    /* background-color: rgb(223, 196, 146); */
+    background-color: antiquewhite;
+}
+
+.container-us img {
+    width: 100%;
 }
 
 .container-us article {
@@ -328,7 +339,7 @@ header {
 .detail-contact {
     display: flex;
     justify-content: space-around;
-    margin: 2rem;
+    background-color: #f7f7f7;
 }
 
 .meet-us .title h3 {
@@ -386,11 +397,11 @@ aside .bio h3 {
 
 .footer {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     position: relative;
     width: 100%;
-    background-color: rgba(236, 213, 193, 0.142);
+    background-color: rgba(192, 156, 125, 0.142);
 }
 
 .footer .social-media {
@@ -403,7 +414,7 @@ aside .bio h3 {
 }
 
 .social-icon-link {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: #422302;
     margin: 0 10px;
     transition: .5s;
@@ -411,6 +422,40 @@ aside .bio h3 {
 
 .social-icon-link:hover {
     transform: translateY(-10px);
+}
+
+/* animation */
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.card:nth-child(2) {
+    transition-delay: 200ms;
+}
+
+.service:nth-child(2) {
+    transition-delay: 200ms;
+}
+
+.service:nth-child(3) {
+    transition-delay: 400ms;
+}
+
+.column:nth-child(2) {
+    transition-delay: 200ms;
+}
+
+.column:nth-child(3) {
+    transition-delay: 400ms;
 }
 
 @media (max-width: 768px) {
@@ -432,10 +477,22 @@ aside .bio h3 {
         height: 240px;
     }
 
+    .hero h1 {
+        font-size: 4rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+
     .card-container {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
+    }
+
+    .card-container h3 {
+        font-size: 2rem;
     }
 
     .cards {
@@ -444,12 +501,20 @@ aside .bio h3 {
         align-items: center;
     }
 
+    .cards p {
+        font-size: 1rem;
+    }
+
     .card {
         flex: 50%;
     }
 
     .service-container {
         display: flex;
+    }
+
+    .service-container h3 {
+        font-size: 2.5rem;
     }
 
     .cards-services {
@@ -470,7 +535,7 @@ aside .bio h3 {
     .image-gallery {
         display: flex;
         flex-wrap: wrap;
-        width: 75%;
+        width: 50%;
     }
 
     .about-us {
@@ -499,6 +564,10 @@ aside .bio h3 {
         flex-direction: column;
     }
 
+    .detail-contact li {
+        justify-content: space-between;
+    }
+
     .meet-us {
         display: flex;
         flex-direction: column;
@@ -510,6 +579,14 @@ aside .bio h3 {
     .dropdown {
         left: 2rem;
         width: unset;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
     }
 
     .card-container {
@@ -573,6 +650,17 @@ aside .bio h3 {
 
     .meet-us ul li i {
         font-size: 1rem;
+    }
+
+    .detail-contact {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .detail-contact .meet-us ul li {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
     .footer {
