@@ -127,7 +127,6 @@ header {
 }
 
 .hero p {
-    /* color: #422302; */
     color: rgb(19, 49, 49);
     font-size: 1.5rem;
 }
@@ -316,7 +315,6 @@ header {
 
 .container-us {
     display: flex;
-    /* background-color: rgb(223, 196, 146); */
     background-color: antiquewhite;
 }
 
